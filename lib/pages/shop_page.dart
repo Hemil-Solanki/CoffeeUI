@@ -2,6 +2,7 @@ import 'package:coffeeui/components/coffee_tile.dart';
 import 'package:coffeeui/models/coffee_shop.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:vibration/vibration.dart';
 
 import '../models/coffee.dart';
 
@@ -13,6 +14,12 @@ class ShopPage extends StatefulWidget {
 }
 
 class _ShopPageState extends State<ShopPage> {
+  // Function to trigger vibration
+  void _vibrate() {
+    // Vibrate for 100ms
+    Vibration.vibrate(duration: 10);
+  }
+
   // add coffee to cart
   void addToCart(Coffee coffee) {
     // add to cart
@@ -56,7 +63,13 @@ class _ShopPageState extends State<ShopPage> {
                     // return the tile for this Coffee
                     return CoffeeTile(
                       coffee: eachCoffee,
-                      onPressed: () => addToCart(eachCoffee),
+                      // onPressed: () => addToCart(eachCoffee),
+                      onPressed: () {
+                        // Call the vibration function
+                        _vibrate();
+                        // Add to cart
+                        addToCart(eachCoffee);
+                      },
                       icon: Icon(Icons.add),
                     );
                   },
