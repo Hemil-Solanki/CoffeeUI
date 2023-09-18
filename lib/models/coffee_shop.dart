@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'coffee.dart';
 
-class CoffeeShop {
+class CoffeeShop extends ChangeNotifier {
   // Coffee for sale list
   final List<Coffee> _shop = [
     // Black Coffee
@@ -19,11 +19,25 @@ class CoffeeShop {
       imagePath: "assets/1latte.png",
     ),
 
+    // Brew
+    Coffee(
+      name: "Brew",
+      price: "220",
+      imagePath: "assets/4brew.png",
+    ),
+
     // Espresso
     Coffee(
       name: "Espresso",
       price: "150",
       imagePath: "assets/6coldroasted.png",
+    ),
+
+    // Frappe
+    Coffee(
+      name: "Frappe",
+      price: "190",
+      imagePath: "assets/8coffee-cup.png",
     ),
 
     // Iced Coffee
@@ -33,11 +47,11 @@ class CoffeeShop {
       imagePath: "assets/9cold-coffee.png",
     ),
 
-    // Brew
+    // Mocha Iced
     Coffee(
-      name: "Brew",
-      price: "200",
-      imagePath: "assets/4brew.png",
+      name: "Mocha Iced",
+      price: "260",
+      imagePath: "assets/3icedcoffee.png",
     ),
   ];
 
@@ -53,11 +67,13 @@ class CoffeeShop {
   // add Item to Cart
   void addItemToCart(Coffee coffee){
     _userCart.add(coffee);
+    notifyListeners();
   }
 
   // remove Item from Cart
   void removeItemFromCart(Coffee coffee){
     _userCart.remove(coffee);
+    notifyListeners();
   }
 
 }
