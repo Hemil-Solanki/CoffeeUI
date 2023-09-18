@@ -11,5 +11,7 @@ Coffee, the perfect app for coffee lovers, connoisseurs, and anyone who can't st
 ## 🌗 Dark theme
 Adapts to device theme
 
+![appicon](https://github.com/Hemil-Solanki/CoffeeUI/assets/101650059/eb5da7c4-3442-47b5-b19b-4f0b35bd64d9)
+
 ## 🔖 LICENCE
 [WTFPL](http://www.wtfpl.net/about/)
