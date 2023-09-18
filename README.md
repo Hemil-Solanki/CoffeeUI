@@ -12,7 +12,7 @@ Coffee, the perfect app for coffee lovers, connoisseurs, and anyone who can't st
 Adapts to device theme
 
 ## APP ICON
-![appicon](https://github.com/Hemil-Solanki/CoffeeUI/assets/101650059/eb5da7c4-3442-47b5-b19b-4f0b35bd64d9)
+![appicon-rounded](https://github.com/Hemil-Solanki/CoffeeUI/assets/101650059/df17c4e8-cf7d-438b-8e78-ed4a265e4cc7)
 
 ## 🔖 LICENCE
 [WTFPL](http://www.wtfpl.net/about/)
