@@ -13,6 +13,3 @@ Adapts to device theme
 
 ## APP ICON
 ![appicon-rounded](https://github.com/Hemil-Solanki/CoffeeUI/assets/101650059/df17c4e8-cf7d-438b-8e78-ed4a265e4cc7)
-
-## 🔖 LICENCE
-[WTFPL](http://www.wtfpl.net/about/)
